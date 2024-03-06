@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: rgb(13, 17, 23);
+  --text: rgb(230, 237, 243);
+  --blue: rgb(47, 129, 247);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.container-outer {
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  background: var(--bg);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
