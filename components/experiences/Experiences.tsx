@@ -1,22 +1,21 @@
 import React from "react";
-import Card from "../card/Card";
-import CardWithTitle from "../cardWithTitle/CardWithTitle";
-import TelescopIcon from "../icons/TelescopIcon";
-import LibraryIcon from "../icons/LibraryIcon";
-import LinkWithStar from "../linkWithStar/LinkWithStar";
 import ProjectCard from "../projectCard/ProjectCard";
+import ShowMoreWithButton from "../showMoreWithButton/ShowMoreWithButton";
+import WorkExperiences from "../workExperiences/WorkExperiences";
 
 type Props = {};
 
 export default function Experiences({}: Props) {
   return (
-    <div>
-      <h2 className="text-xl text-light-1 font-semibold mb-4">
-        Work Experience
-      </h2>
-      <ProjectCard domain="Workhy-Mükellef" title="Frontend Developer" href="https://telescop.com">
-        asd
-      </ProjectCard>
+    <div className="flex flex-col gap-4">
+      <h2 className="text-xl text-light-1 font-semibold">Work Experience</h2>
+      <div className="flex flex-col gap-4">
+        <WorkExperiences />
+      </div>
+      <h2 className="text-xl text-light-1 font-semibold">Projects</h2>
+      <div className="flex flex-col gap-4">
+        <WorkExperiences />
+      </div>
     </div>
   );
 }

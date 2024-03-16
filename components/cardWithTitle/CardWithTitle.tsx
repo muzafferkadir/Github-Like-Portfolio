@@ -17,7 +17,7 @@ export default function CardWithTitle({
   return (
     <div className="border border-dark rounded">
       <div className="bg-dark-2 border-b border-dark">
-        <h3 className="p-4 text-sm font-semibold flex items-center">
+        <h3 className="px-4 py-3.5 text-sm font-semibold flex items-center">
           {icon && <span className="mr-2">{icon}</span>}
           {title}
         </h3>
@@ -32,7 +32,7 @@ export default function CardWithTitle({
           </ul>
         )}
       </div>
-      <div className="px-4 py-2">{children}</div>
+      <div className="px-4 py-2 shadow-[inset_0px_-10px_10px_0px_rgba(0,0,0,0.25)]">{children}</div>
     </div>
   );
 }

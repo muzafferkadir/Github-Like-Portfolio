@@ -24,6 +24,7 @@ const config: Config = {
           DEFAULT: "rgb(48, 54, 61)",
           1: "rgb(48, 54, 61)",
           2: "rgb(22, 27, 34)",
+          3: "rgb(33, 38, 45)"
         },
       },
       borderWidth: {

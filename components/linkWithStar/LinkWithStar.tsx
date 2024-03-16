@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import LibraryIcon from "../icons/LibraryIcon";
 import StarIcon from "../icons/StarIcon";
 import Bagde from "../badge/Bagde";
@@ -11,6 +12,7 @@ type Props = {
   starCount?: string;
   withButton?: boolean;
   biggerTitle?: boolean;
+  starred?: boolean;
 };
 
 export default function LinkWithStar({
@@ -20,11 +22,16 @@ export default function LinkWithStar({
   starCount,
   withButton = false,
   biggerTitle,
+  starred,
 }: Props) {
   const cx = classnames("flex items-center hover:underline hover:text-blue flex-wrap", {
     "text-xl": biggerTitle,
   });
 
+  const [isStarred, setIsStarred] = useState(starred);
+  const handleStarClick = () => {
+    setIsStarred(!isStarred);
+  };
   return (
     <div className="flex justify-between flex-grow">
       <div className={cx}>
@@ -45,14 +52,15 @@ export default function LinkWithStar({
         <a
           href={href}
           className="flex items-center bg-primary rounded px-2.5 py-1.5 border border-light cursor-pointer hover:border-light-1 max-h-8"
+          onClick={handleStarClick}
         >
-          <StarIcon />
+          <StarIcon starred={isStarred} />
           <span className="text-white ml-2 text-xs font-medium">Star</span>
           {starCount && <Bagde text={starCount} className="ml-2" />}
         </a>
       ) : (
-        <a href={href} className="flex items-center cursor-default">
-          <StarIcon />
+        <a href={href} className="flex items-center cursor-default" onClick={handleStarClick}>
+          <StarIcon starred={isStarred}/>
           <span className="ml-1 text-light-1 hover:text-blue">{starCount}</span>
         </a>
       )}

@@ -23,7 +23,7 @@ export default function ProjectCard({ children, href, domain, title }: Props) {
       }
       defaultTab="Description"
     >
-      <div>{children}</div>
+      <div className="py-2">{children}</div>
     </CardWithTitle>
   );
 }
