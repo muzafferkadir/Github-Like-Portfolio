@@ -69,7 +69,7 @@ export default function ProfileCard() {
         <div className="flex items-center mt-2 gap-1 w-full">
           <EmailIcon />
           <p
-            className="text-sm text-light-1 cursor-pointer w-full"
+            className="text-sm text-light-1 cursor-pointer w-full truncate"
             onMouseEnter={hoverEmail}
             onMouseLeave={leaveEmail}
             onClick={copyEmail}
