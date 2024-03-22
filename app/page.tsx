@@ -1,6 +1,6 @@
-import Card from "@/components/card/Card";
 import Experiences from "@/components/experiences/Experiences";
 import LeftSideBar from "@/components/leftSideBar/LeftSideBar";
+import RightSideBar from "@/components/rightSideBar/RightSideBar";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <Experiences />
       </div>
       <div className="w-full md:w-3/12 px-2">
-        <Card>Zart 3</Card>
+        <RightSideBar />
       </div>
     </div>
   );
