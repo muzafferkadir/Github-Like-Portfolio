@@ -25,7 +25,7 @@ export default function LinkWithStar({
   starred,
 }: Props) {
   const cx = classnames("flex items-center hover:underline hover:text-blue flex-wrap", {
-    "text-xl": biggerTitle,
+    "text-lg md:text-xl": biggerTitle,
   });
 
   const [isStarred, setIsStarred] = useState(starred);
@@ -55,7 +55,7 @@ export default function LinkWithStar({
           onClick={handleStarClick}
         >
           <StarIcon starred={isStarred} />
-          <span className="text-white ml-2 text-xs font-medium">Star</span>
+          <span className="text-white ml-2 text-xs font-medium">{isStarred ? "Starred" : "Star"}</span>
           {starCount && <Bagde text={starCount} className="ml-2" />}
         </a>
       ) : (
