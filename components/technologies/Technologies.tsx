@@ -7,24 +7,41 @@ import Bagde from "../badge/Bagde";
 
 export default function Technologies() {
   const allTechnologies = [
-    "React",
-    "Vue",
-    "Angular",
-    "Svelte",
-    "Ember",
-    "Backbone",
-    "Meteor",
-    "Aurelia",
-    "Polymer",
-    "Mithril",
-    "Knockout",
-    "Preact",
-    "Inferno",
-    "Marko",
-    "Riot",
+    "JavaScript",
+    "Typescript",
+    "MongoDB",
+    "PostgreSQL",
+    "Figma",
+    "Tailwind CSS",
+    "Docker",
+    "AWS",
+    "Azure",
+    "Postman",
+    "Webpack",
+    "Jira",
+    "Git",
+    "Socket.io",
+    "Kafka",
+    "HTML",
+    "CSS",
+    "SCSS",
+    "Nest JS",
+    "Kong API Gateway",
+    "Bootstrap",
+    "Fabric JS",
+    "Vuepress",
+    "Bull JS",
+    "Mongoose",
+    "Sequelize ORM",
+    "Swagger",
+    "Insomnia",
+    "WordPress",
+    "Redis",
+    "Arduino",
+    "Python",
   ];
 
-  const [shownTechnologies, setShownTechnologies] = useState(allTechnologies.slice(0, 10));
+  const [shownTechnologies, setShownTechnologies] = useState(allTechnologies.slice(0, 14));
   
   return (
     <CardWithTitle title="Tech Stack" icon={<TelescopIcon />}>

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import Card from "../card/Card";
 import Image from "next/image";
@@ -6,6 +6,7 @@ import LocationIcon from "../icons/LocationIcon";
 import UniversityIcon from "../icons/UniversityIcon";
 import LinkIcon from "../icons/LinkIcon";
 import EmailIcon from "../icons/EmailIcon";
+import { BsPerson } from "react-icons/bs";
 
 export default function ProfileCard() {
   const emailAddress = "muzafferkadiryilmaz@gmail.com";
@@ -13,10 +14,15 @@ export default function ProfileCard() {
 
   const hoverEmail = () => setEmail("Click to copy");
   const leaveEmail = () => setEmail(emailAddress);
-  const copyEmail = () => {
-    navigator.clipboard.writeText(emailAddress);
-    setEmail("Copied");
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(emailAddress);
+      setEmail("Copied");
+    } catch (error) {
+      console.error("Failed to copy email:", error);
+    }
   };
+  
 
   return (
     <Card>
@@ -41,15 +47,21 @@ export default function ProfileCard() {
           </a>
         </div>
         <div className="flex items-center mt-4 gap-1 w-full">
-          <LocationIcon />
+          <span className="min-w-4">
+            <LocationIcon />
+          </span>
           <p className="text-sm text-light-1">Samsun, Turkey</p>
         </div>
         <div className="flex items-center mt-2 gap-1 w-full">
-          <UniversityIcon />
+          <span className="min-w-4">
+            <UniversityIcon />
+          </span>
           <p className="text-sm text-light-1">Karadeniz Technical University</p>
         </div>
         <div className="flex items-center mt-2 gap-1 w-full">
-          <LinkIcon />
+          <span className="min-w-4">
+            <LinkIcon />
+          </span>
           <a
             href="https://mkdir.dev"
             className="text-sm text-light-1 hover:text-blue hover:underline hover:underline-blue"
@@ -58,7 +70,9 @@ export default function ProfileCard() {
           </a>
         </div>
         <div className="flex items-center mt-2 gap-1 w-full">
-          <LinkIcon />
+          <span className="min-w-4">
+            <LinkIcon />
+          </span>
           <a
             href="https://muzafferkadir.com"
             className="text-sm text-light-1 hover:text-blue hover:underline hover:underline-blue"
@@ -67,7 +81,9 @@ export default function ProfileCard() {
           </a>
         </div>
         <div className="flex items-center mt-2 gap-1 w-full">
-          <EmailIcon />
+          <span className="min-w-4">
+            <EmailIcon />
+          </span>
           <p
             className="text-sm text-light-1 cursor-pointer w-full truncate"
             onMouseEnter={hoverEmail}
@@ -76,6 +92,18 @@ export default function ProfileCard() {
           >
             {email}
           </p>
+        </div>
+        <div className="flex items-center mt-2 gap-1 w-full">
+          <span className="min-w-4">
+            <BsPerson className="text-light-1 text-lg" />
+          </span>
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            className="text-sm text-light-1 hover:text-blue hover:underline hover:underline-blue"
+          >
+            My CV
+          </a>
         </div>
       </div>
     </Card>

@@ -59,7 +59,7 @@ export default function LinkWithStar({
           {starCount && <Bagde text={starCount} className="ml-2" />}
         </a>
       ) : (
-        <a href={href} className="flex items-center cursor-default" onClick={handleStarClick}>
+        <a className="flex items-center cursor-default" onClick={handleStarClick}>
           <StarIcon starred={isStarred}/>
           <span className="ml-1 text-light-1 hover:text-blue">{starCount}</span>
         </a>

@@ -25,13 +25,22 @@ export default function Frameworks() {
           LinkedIn
         </Link>
       </div>
-      <div className="flex flex-row py-2">
+      <div className="flex flex-row border-b py-2">
         <Link
           className="flex hover:underline gap-x-2 items-center"
           href={"https://www.youtube.com/@muzafferkadir"}
         >
           <LinkIcon />
           Youtube
+        </Link>
+      </div>
+      <div className="flex flex-row py-2">
+        <Link
+          className="flex hover:underline gap-x-2 items-center"
+          href={"https://github.com/muzafferkadir"}
+        >
+          <LinkIcon />
+          Github
         </Link>
       </div>
     </CardWithTitle>

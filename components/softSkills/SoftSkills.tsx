@@ -9,19 +9,11 @@ export default function SoftSkills() {
   const softSkills = [
     "Teamwork",
     "Problem-solving",
-    "Communication",
-    "Time management",
     "Adaptability",
-    "Creativity",
     "Work ethic",
-    "Interpersonal skills",
+    "Creativity",
     "Critical thinking",
-    "Conflict resolution",
-    "Leadership",
-    "Attention to detail",
     "Emotional intelligence",
-    "Empathy",
-    "Patience",
   ];
 
   const [shownSkills, setShownSkills] = useState(softSkills.slice(0, 5));

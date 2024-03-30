@@ -11,7 +11,6 @@ export default function WorkExperiences() {
         startDate={new Date("2022-09-25")}
         endDate={Date.now()}
         tecnologies={["React", "TypeScript", "TailwindCSS", "GraphQL", "JavaScript", "C", "HTML"]}
-        href="#"
       >
         <ShowMoreWithButton>
           <p>
@@ -41,7 +40,6 @@ export default function WorkExperiences() {
         startDate={new Date("2022-09-25")}
         endDate={Date.now()}
         tecnologies={["React", "TypeScript"]}
-        href="#"
         image="/projects/mukellef.png"
       >
         <ShowMoreWithButton>
