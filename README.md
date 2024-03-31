@@ -2,10 +2,8 @@
 
 #### Demo: https://mkdir.dev
 
-![Desktop preview](/public/readme/mkdir.dev%20desktop.webp)
-
-Mobile Preview
-![Mobile preview](/public/readme/mkdir.dev%20mobile.webp)
+[![Desktop preview](/public/readme/mkdir.dev%20desktop.webp)](https://mkdir.dev)
+[![Desktop preview](/public/readme/screenshot.webp)](https://mkdir.dev)
 
 ## Features
 - Developer focused design (inspired by Github)
