@@ -14,7 +14,7 @@
 ## Installation
 Clone repo
 ```bash
-git clone https://github.com/muzafferkadir/mkdir.dev
+git clone https://github.com/muzafferkadir/Github-Like-Portfolio
 ```
 install dependencies with npm or yarn
 ```bash
