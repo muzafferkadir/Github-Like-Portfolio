@@ -1,9 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🧑🏻‍💻 Developer portfolio project using 🚀 NextJS 14 and TailwindCSS (with  Github-like ui :D) 
 
-## Getting Started
+#### Demo: https://mkdir.dev
 
-First, run the development server:
+![Desktop preview](/public/readme/mkdir.dev%20desktop.webp)
 
+Mobile Preview
+![Mobile preview](/public/readme/mkdir.dev%20mobile.webp)
+
+## Features
+- Developer focused design (inspired by Github)
+- Responsive layout
+- Used TailwindCSS and Next.js 
+- Detailed and various sections
+
+## Installation
+Clone repo
+```bash
+git clone https://github.com/muzafferkadir/mkdir.dev
+```
+install dependencies with npm or yarn
+```bash
+yarn
+#or
+npm install
+```
+run the project
 ```bash
 npm run dev
 # or
@@ -16,21 +37,23 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Customization
 
-## Learn More
+After installation you should edit these files according to yourself (Before customization i highly recommend deleting files in the `public` folder):
 
-To learn more about Next.js, take a look at the following resources:
+- `ProfileCard.tsx` _(components/profileCard/ProfileCard.tsx)_
+- `Frameworks.tsx` _(components/frameworks/Frameworks.tsx)_
+- `Technologies.tsx` _(components/technologies/Technologies.tsx)_
+- `SoftSkills.tsx` _(components/softSkills/SoftSkills.tsx)_
+- `Education.tsx` _(components/education/Education.tsx)_
+- `WorkExperiences.tsx` _(components/workExperiences/WorkExperiences.tsx)_
+- `Projects.tsx` _(components/projects/Projects.tsx)_
+- `socialNetworksCard.tsx` _(components/socialNetworksCard/socialNetworksCard.tsx)_
+- `YoutubeVideosCard.tsx` _(components/youtubeVideosCard/YoutubeVideosCard.tsx)_
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Also you can delete youtube part from `components/rightSideBar/RightSideBar.tsx` (delete `<YoutubeVideosCard />`) 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deploy on Vercel (free)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js. Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

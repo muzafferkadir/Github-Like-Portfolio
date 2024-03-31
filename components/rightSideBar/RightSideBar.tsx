@@ -1,6 +1,5 @@
 import React from "react";
-import FrameworksCard from "../frameworks/Frameworks";
-import SocialNetworksCard from "../socialNetworksCard/socialNetworksCard";
+import SocialNetworksCard from "../socialNetworksCard/SocialNetworksCard";
 import YoutubeVideosCard from "../youtubeVideosCard/YoutubeVideosCard";
 
 export default function RightSideBar() {
