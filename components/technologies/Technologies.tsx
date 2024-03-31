@@ -41,7 +41,7 @@ export default function Technologies() {
     "Python",
   ];
 
-  const [shownTechnologies, setShownTechnologies] = useState(allTechnologies.slice(0, 14));
+  const [shownTechnologies, setShownTechnologies] = useState(allTechnologies.slice(0, 10));
   
   return (
     <CardWithTitle title="Tech Stack" icon={<TelescopIcon />}>

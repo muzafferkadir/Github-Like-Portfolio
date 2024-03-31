@@ -3,7 +3,6 @@ import CardWithTitle from "../cardWithTitle/CardWithTitle";
 import LinkWithStar from "../linkWithStar/LinkWithStar";
 import { GoCalendar } from "react-icons/go";
 import TechnologiesBadge from "../technologiesBadge/TechnologiesBadge";
-import Image from "next/image";
 
 type Props = {
   children: React.ReactNode;
@@ -40,7 +39,7 @@ export default function ProjectCard({
   };
 
   const footer = (
-    <div className="flex gap-2 items-center py-2 flex-wrap">
+    <div className="flex gap-2 md:gap-4 items-center py-2 flex-wrap">
       {startDate && (
         <div className="flex gap-1 items-center text-xs text-light-1">
           <GoCalendar />

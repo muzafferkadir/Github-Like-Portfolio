@@ -10,7 +10,7 @@ export default function ShowMoreWithButton({ children }: Props) {
   const [open, setOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
-  const breakpoint = 96; // 96px max-h-24 6rem
+  const breakpoint = 64; // 64px max-h-16 4rem
 
   useEffect(() => {
     if (contentRef.current) {
@@ -20,7 +20,7 @@ export default function ShowMoreWithButton({ children }: Props) {
 
   const cx = classnames(
     "transition-all duration-500 ease-in-out text-slate-600 text-sm overflow-hidden",
-    { "max-h-24": !open }
+    { "max-h-16": !open }
   );
 
   return (

@@ -1,8 +1,12 @@
 // Define custom colors for languages that are not in the GitHub colors list
 const CUSTOM_COLORS = [
-  { name: "React", color: "#4F5D95" },
-  { name: "TypeScript", color: "#FF0000" },
-  { name: "TailwindCSS", color: "#00FF00" },
+  { name: "React", color: "#149eca" },
+  { name: "TypeScript", color: "#3178c6" },
+  { name: "TailwindCSS", color: "#38bdf8" },
+  { name: "Bootstrap", color: "#712cf9" },
+  { name: "Nuxt.js", color: "#00C58E" },
+  { name: "Next.js", color: "#FFFFFF" },
+  { name: "Node", color: "#417e38" },
   { name: "C", color: "#555555" },
   { name: "C#", color: "#178600" },
   { name: "C++", color: "#f34b7d" },

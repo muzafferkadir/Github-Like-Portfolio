@@ -7,14 +7,18 @@ type Props = {
 
 export default function technologiesBadge({ name }: Props) {
   const generateRandomColor = (name: string) => {
-    const h = Math.abs(name.split("").reduce((a, b) => a + b.charCodeAt(0), 0));
-    const randomColor =
-      "#" + ((h & 0x00ffffff) | 0x800000).toString(16).slice(1);
-    return randomColor;
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const color = (hash | 0x080808).toString(16).substr(-6).toUpperCase();
+    return `#${color.padStart(6, "0")}`;
   };
 
   let color = COLORS.find((color) => color.name === name)?.color;
-  if (!color) color = generateRandomColor(name);
+  if (!color) {
+    color = generateRandomColor(name);
+  }
 
   return (
     <div className="flex items-center">
